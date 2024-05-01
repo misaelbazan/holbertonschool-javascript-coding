@@ -21,7 +21,7 @@ function countStudents(fileName) {
       records.push(record);
     });
 
-    console.log('Number of students:', rows.length);
+    console.log(`Number of students: ${records.length}`);
     const studentsCs = Object.values(records).filter((value) => value.field === 'CS');
     console.log(`Number of students in CS: ${studentsCs.length}. List: ${studentsCs.map((name) => name.firstname).join(', ')}`);
     const studentsSwe = Object.values(records).filter((value) => value.field === 'SWE');
