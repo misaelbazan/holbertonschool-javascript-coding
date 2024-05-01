@@ -26,7 +26,7 @@ function countStudents(fileName) {
     console.log(`Number of students in CS: ${studentsCs.length}. List: ${studentsCs.map((name) => name.firstname).join(', ')}`);
     const studentsSwe = Object.values(records).filter((value) => value.field === 'SWE');
 
-    console.log(`Number of students: ${studentsSwe.length}. List: ${studentsSwe.map((user) => user.firstname).join(', ')}`);
+    console.log(`Number of students in SWE: ${studentsSwe.length}. List: ${studentsSwe.map((user) => user.firstname).join(', ')}`);
   } catch (error) {
     throw new Error('Cannot load the database');
   }
